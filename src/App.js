@@ -2,6 +2,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, Image  } from 'react-native';
 import { Login } from './screens/login';
 import { SignUp } from './screens/signUp';
+import { Home } from './screens/home';
 
 export default function App() {
   
@@ -11,8 +12,9 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <Login/>
+      {/* <Login/> */}
       {/* <SignUp/> */}
+      <Home/>
     </SafeAreaView>
   );
 }
