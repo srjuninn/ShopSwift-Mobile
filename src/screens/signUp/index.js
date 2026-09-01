@@ -1,27 +1,26 @@
-import { SafeAreaView } from "react-native-safe-area-context"
-import { Text, Image, View, TextInput, Pressable } from 'react-native'
+import { Image } from 'react-native'
 import logo from '../../assets/logoShopSwift.png'
-import { styles } from './style'
+import { Container, TextTitle, TextHighlights, FormContainer, FormLabel, TextLabel, Input, SignUpButton, SignUpButtonText, HaveAnAccountText, SignUpText, HaveAnAccount } from './style'
 
 export const SignUp = () => {
     return (
-        <SafeAreaView>
-            <View style={styles.containerHome}>
-                <Image source={logo} />
-                <Text style={styles.titleTxt}>Crie uma conta e <Text style={styles.titleHighlights}>se descubra</Text></Text>
-                <View style={styles.formContainer}>
-                    <View style={styles.contentSignUp}>
-                        <Text style={styles.txtInput}>E-mail</Text>
-                        <TextInput style={styles.input} placeholder="insira seu e-mail" keyboardAppearance="email-address"></TextInput>
-                    </View>
-                    <View style={styles.contentSignUp}>
-                        <Text style={styles.txtInput}>Senha</Text>
-                        <TextInput style={styles.input} placeholder="insira sua senha" secureTextEntry></TextInput>
-                    </View>
-                    <Pressable style={styles.button}><Text style={styles.buttonTxt}>Cadastrar</Text></Pressable>
-                    <Text style={styles.haveAccountTxt}>Já tem uma conta ? <Text style={styles.haveAccountSignUp}>Entrar</Text></Text>
-                </View>
-            </View>
-        </SafeAreaView>
+        <Container>
+            <Image source={logo}/>
+            <TextTitle>Crie uma conta e <TextHighlights>se surpreenda</TextHighlights></TextTitle>
+            <FormContainer>
+                <FormLabel>
+                    <TextLabel>E-mail</TextLabel>
+                    <Input placeholder='meuemail@email.com' keyboardType='email-address'></Input>
+                </FormLabel>
+                <FormLabel>
+                    <TextLabel>Password</TextLabel>
+                    <Input placeholder='**********' secureTextEntry></Input>
+                </FormLabel>
+            </FormContainer>
+            <HaveAnAccount>
+                <SignUpButton><SignUpButtonText>Cadastrar</SignUpButtonText></SignUpButton>
+                <HaveAnAccountText>Já tem uma conta ? <SignUpText>Entrar</SignUpText></HaveAnAccountText>
+            </HaveAnAccount>
+        </Container>
     )
 }

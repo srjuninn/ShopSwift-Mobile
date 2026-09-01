@@ -2,7 +2,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, Image  } from 'react-native';
 import { Login } from './screens/login';
 import { SignUp } from './screens/signUp';
-import { Cadastro } from './components/Cadastro';
 
 export default function App() {
   
@@ -12,9 +11,8 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      {/* <Login/> */}
-      {/* <SignUp></SignUp> */}
-      {/* <Cadastro/> */}
+      <Login/>
+      {/* <SignUp/> */}
     </SafeAreaView>
   );
 }

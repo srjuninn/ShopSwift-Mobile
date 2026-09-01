@@ -1,55 +1,63 @@
-import { StyleSheet } from 'react-native'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    containerHome: {
-        paddingHorizontal: 20,
-        gap: 78
-    },
-    titleTxt: {
-        color: '#2D3133',
-        fontSize: 40,
-        fontWeight: '700',
-        width: 300
-    },
-    titleHighlights: {
-        color: '#375EE7',
-        fontSize: 40
-    },
-    formContainer: {
-        gap: 20
-    },
-    contentSignUp: {
-        gap: 20
-    },
-    txtInput: {
-        fontSize: 24,
-        color: '#000000'
-    },
-    input: {
-        borderWidth: 1,
-        borderRadius: 8,
-        paddingHorizontal: 10,
-        borderColor: '#2D3133'
-    },
-    button: {
-        marginTop: 40,
-        paddingHorizontal: 50,
-        paddingVertical: 18,
-        backgroundColor: '#375EE7',
-        borderRadius: 8
-    },
-    buttonTxt: {
-        textAlign: 'center',
-        color: '#F8FAFC',
-        fontSize: 24
-    },
-    haveAccountTxt: {
-        textAlign: 'center',
-        fontSize: 18
-    },
-    haveAccountSignUp: {
-        color: '#375EE7',
-        fontWeight: '700'
-    }
+export const Container = styled.View`
+   padding: 0 20px;
+   gap: 78px;
+ `
 
-})
+export const TextTitle = styled.Text`
+    font-size: 40px;
+    font-weight: 700;
+    width: 290px;
+ `
+
+export const TextHighlights = styled.Text`
+    color: #375EE7;
+ `
+
+export const FormContainer = styled.View`
+   gap: 20px;
+ `
+
+export const FormLabel = styled.View`
+   gap: 20px;
+ `
+
+export const TextLabel = styled.Text`
+   font-size: 28px;
+`
+
+export const Input = styled.TextInput`
+   padding: 10px 20px;
+   border: 1px solid #2D3133;
+   border-radius: 7px;
+   font-size: 24px;
+   `
+
+export const SignUpButton = styled.TouchableOpacity`
+   padding: 18px 50px;
+   background-color: #375EE7;
+   border-radius: 7px;
+   `
+
+export const SignUpButtonText = styled.Text`
+   font-size: 24px;
+   color: #F8FAFC;
+   text-align: center;
+   `
+export const HaveAnAccount = styled.View`
+   gap: 20px;
+`
+
+export const HaveAnAccountText = styled.Text`
+   font-size: 24px;
+   text-align: center;
+   `
+
+export const SignUpText = styled.Text`
+   font-size: 24px;
+   font-weight: bold;
+   text-align: center;
+   color: #375EE7;
+   text-decoration: underline;
+`

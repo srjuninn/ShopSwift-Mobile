@@ -17,9 +17,9 @@ export const Login = () => {
                         <Text style={styles.txtInput}>Senha</Text>
                         <TextInput style={styles.input} placeholder='insira sua senha' secureTextEntry={true} />
                     </View>
-                    <Pressable style={styles.button}><Text style={styles.txtButton}>Entrar</Text></Pressable>
                 </View>
                 <View style={styles.dontHaveAccount}>
+                    <Pressable style={styles.button}><Text style={styles.txtButton}>Entrar</Text></Pressable>
                     <Text style={styles.dontHaveAccountTxt}>Não tem conta ? <Text style={styles.createAccountTxt}>Criar Conta</Text></Text>
                 </View>
             </View>
