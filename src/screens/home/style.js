@@ -57,5 +57,21 @@ export const CategoryImage = styled.Image`
 export const CategoryText = styled.Text`
     font-size: 20px;
     font-weight: bold;
-    color: #375EE7
+    color: #375EE7;
+    `
+
+export const ActiveCategory = styled.View`
+    flex-direction: row;
+    padding: 10px 20px; 
+    gap: 12px;
+    background-color: #375EE7;
+    border-radius: 7px;
+    
+    `
+
+export const ActiveText = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9f9f9;
+
 `
