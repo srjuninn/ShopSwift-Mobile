@@ -1,15 +1,20 @@
 import { HighlightsText, HighlightsTitle, HomeContainer, OurHighlights, ScrollViewHighlights, OurCategories, OurCategoriesTitle, OurCategoriesText, Categories, CategoryImage, CategoryText, Category } from "./style"
-import { Image } from "react-native"
+import { Image, ScrollView} from "react-native"
 import logotype from '../../assets/logoShopSwift.png'
-import { ScrollView } from "react-native"
 import destaque1 from '../../assets/destaque1.png'
 import destaque2 from '../../assets/destaque2.png'
 import destaque3 from '../../assets/destaque3.png'
 import games from '../../assets/gamesIcon.png'
+import gamesActive from '../../assets/gamesActive.png'
 import shirts from '../../assets/shirtIcon.png'
+import shirtsActive from '../../assets/shirtActive.png'
 import shoes from '../../assets/shoesIcon.png'
+import shoesActive from '../../assets/shoesActive.png'
 import eletronics from '../../assets/eletronicsIcon.png'
+import eletronicsActive from '../../assets/eletronicActive.png'
 import pants from '../../assets/pantsIcon.png'
+import pantsActive from '../../assets/pantsActive.png'
+import { CardCategory } from "../../components/CardCategory"
 
 export const Home = () => {
     return (
@@ -31,7 +36,8 @@ export const Home = () => {
                 <OurCategoriesTitle>Nossas <OurCategoriesText>Categorias</OurCategoriesText></OurCategoriesTitle>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                     <Categories>
-                        <Category>
+                        {/* Duas ultilização de cards categoriesa, sem props e com props */}
+                        {/* <Category>
                             <CategoryImage source={games} />
                             <CategoryText>Gaymes</CategoryText>
                         </Category>
@@ -50,7 +56,33 @@ export const Home = () => {
                         <Category>
                             <CategoryImage source={eletronics} />
                             <CategoryText>Eletrônicos</CategoryText>
-                        </Category>
+                        </Category> */}
+                        <CardCategory
+                            image={games}
+                            activeImage={gamesActive}
+                            name="Gaymes"
+                        />
+                        <CardCategory
+                            image={shirts}
+                            activeImage={shirtsActive}
+                            name="Camisinhas"
+                        />
+                        <CardCategory
+                            image={pants}
+                            activeImage={pantsActive}
+                            name="Camisinhas"
+                        />
+                        <CardCategory
+                            image={shoes}
+                            activeImage={shoesActive}
+                            name="Tênis"
+                        />
+                        <CardCategory
+                            image={eletronics}
+                            activeImage={eletronicsActive}
+                            name="Eletrônicos"
+                        />
+
                     </Categories>
                 </ScrollView>
             </OurCategories>
