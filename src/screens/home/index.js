@@ -15,10 +15,11 @@ import eletronicsActive from '../../assets/eletronicActive.png'
 import pants from '../../assets/pantsIcon.png'
 import pantsActive from '../../assets/pantsActive.png'
 import { CardCategory } from "../../components/CardCategory"
+import { ProductsSection } from "../../components/ProductSection"
 
 export const Home = () => {
     return (
-        <HomeContainer>
+        <HomeContainer showsHorizontalScrollIndicator={false}>
             <Image source={logotype} />
             <OurHighlights>
                 <HighlightsTitle>Nossos <HighlightsText>destaques</HighlightsText></HighlightsTitle>
@@ -70,7 +71,7 @@ export const Home = () => {
                         <CardCategory
                             image={pants}
                             activeImage={pantsActive}
-                            name="Camisinhas"
+                            name="Calcinhas"
                         />
                         <CardCategory
                             image={shoes}
@@ -86,6 +87,7 @@ export const Home = () => {
                     </Categories>
                 </ScrollView>
             </OurCategories>
+            <ProductsSection/>
         </HomeContainer>
     )
 }
