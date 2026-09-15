@@ -3,6 +3,8 @@ import { View, Text, Image  } from 'react-native';
 import { Login } from './screens/login';
 import { SignUp } from './screens/signUp';
 import { Home } from './screens/home';
+import { Products } from './screens/Products';
+import { Contato } from './screens/Contact';
 
 export default function App() {
   
@@ -14,7 +16,9 @@ export default function App() {
     <SafeAreaView>
       {/* <Login/> */}
       {/* <SignUp/> */}
-      <Home/>
+      {/* <Home/> */}
+      {/* <Products/> */}
+      <Contato/>
     </SafeAreaView>
   );
 }
