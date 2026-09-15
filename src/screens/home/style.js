@@ -1,13 +1,14 @@
 import styled from "styled-components/native";
 
-export const HomeContainer = styled.View`
+export const HomeContainer = styled.ScrollView`
     gap: 78px;
     padding-left: 20px;
 `
 
 export const OurHighlights = styled.View`
+    margin-top: 44px;
     gap: 5px;
-`
+    `
 
 export const HighlightsTitle = styled.Text`
     font-size: 25px;
@@ -25,6 +26,7 @@ export const ScrollViewHighlights = styled.ScrollView.attrs({
 
 export const OurCategories = styled.View`
     gap: 12px;
+    margin-top: 44px;
     `
 
 export const OurCategoriesTitle = styled.Text`
