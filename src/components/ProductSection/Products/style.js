@@ -8,6 +8,8 @@ export const BoxProducts = styled.View`
 
 export const ProductImage = styled.Image`
     width: 174px;
+    height: 150px;
+    object-fit: contain;
 `
 
 export const ProductsDescription = styled.View`
